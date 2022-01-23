@@ -12,19 +12,18 @@ The class in youtube-sentiment.ipynb allows you to do any of the following:
 
 ## Examples:
   
-Getting the overall sentiment of a video:
-  
+### Getting the overall sentiment of a video:
+![](Examples/sentiment.PNG) 
     
 This video is Youtube Rewind 2018, the most disliked video of all time. The sentiment is not as low as expected due to the large amounts of sarcasm in the comment section.
   
-Getting the top 100 comments and their sentiments:
-  
+### Getting the top 100 comments and their sentiments:
+![](Examples/sentiment_df.PNG)
    
 It can be seen that many of the comments are clearly sarcastic but VADER does not pick up on that.
     
-Getting the top 5 videos from a channel:
-  
-    
+### Getting the top 5 videos from a channel:
+![](Examples/top_videos.PNG)
 Easteregg! This is from my personal Youtube channel
   
 ## How to use:  
