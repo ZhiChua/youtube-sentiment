@@ -4,7 +4,7 @@
   
 Youtube has removed the dislike button. The fun of disliking terrible videos like Youtube rewind are gone. Fortunately, this project can give a user insight to the sentiment of a video based on the top 50 comments. 
 
-The class in youtube-sentiment.ipynb allows you to do any of the following:
+The class in **youtube-sentiment.ipynb** allows you to do any of the following:
 
 - Get a list of the top 100 comments of a video and their respective sentiments
 - Get the overall sentiment of a video based on the top 100 comments
@@ -32,14 +32,14 @@ pip install beautifulsoup4
 pip install vader  
 pip install webdriver  
 
-Only use youtube-sentiment.ipynb, the other notebooks are purely for testing
-Notes can be found in docstrings for each method
+Only use youtube-sentiment.ipynb, the other notebooks are purely for testing  
+Notes can be found in docstrings for each method that include all parameters, and outputs
 
 ## Notes:  
-Used BeautifulSoup for video scraping
-Used Selenium for comment scraping - Beautifulsoup does not work for comments as comments are rendered dynamically.  
-Used Vader for NLP - Understands internet slang but not sarcasm
-ex:   
+- Used BeautifulSoup for video scraping  
+- Used Selenium for comment scraping - Beautifulsoup does not work for comments as comments are rendered dynamically.    
+- Used Vader for NLP - Vader was chosen against Flair and Textblob as it understands internet lingo up to a certain extent. Vader was built specifically for analysing social media and an example can be seen below. Unfortunately, Vader cannot understand sarcasm.
+    ex:   
 `sentiment_dict = obj.polarity_scores('I love pizza')
 print(sentiment_dict)`  
 `{'neg': 0.0, 'neu': 0.323, 'pos': 0.677, 'compound': 0.6369}`  
